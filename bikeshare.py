@@ -234,9 +234,9 @@ def main():
         user_stats(df,city)
         raw_data(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = input('\nWould you like to restart? Enter yes to continue.\n')
         if restart.lower() != 'yes':
-            print("Thank you for using the bikeshare data tool! Goodbye!")
+            print("Thank you for using the bikeshare data analysis tool! Goodbye!")
             break
 
 
