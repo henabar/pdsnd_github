@@ -234,7 +234,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df,city)
         raw_data(df)
-
+        # If response from user (below) is anything other than "yes" then the assumed response is "no"
         restart = input('\nWould you like to restart? Enter yes to continue.\n')
         if restart.lower() != 'yes':
             print("Thank you for using the bikeshare data analysis tool! Goodbye!")
