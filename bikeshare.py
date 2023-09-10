@@ -12,7 +12,7 @@ import numpy as np
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
-#pathtofiles='/Users/yasmi/Documents/SilverMoonDocuments/WorkData/NanoPython/BikeShare/'
+
 
 def get_filters():
     """
@@ -94,7 +94,7 @@ def load_data(city, month, day):
     """
     if city=='new york':
         city='new york city'
-    #filename = city+'.csv'
+        
     filename=CITY_DATA[city]
     # add path to city name
     df = pd.read_csv(filename)
