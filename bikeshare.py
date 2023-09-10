@@ -210,6 +210,7 @@ def user_stats(df, city):
     print('-'*40)
     
 def raw_data(df):
+    """Displays raw data 5 lines at a time on bikeshare users."""
     valid_input = False
     i=0
     while valid_input == False and i<df['Start Time'].count():
@@ -235,6 +236,7 @@ def main():
         raw_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
+        # If response is anything other than "yes" then the assumed response is "no"
         if restart.lower() != 'yes':
             print("Thank you for using the bikeshare data tool! Goodbye!")
             break
